@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBooks</title>
+    <link rel="stylesheet" href="sbooks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>SBooks</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Invisible Man</h2>
+            <h5>H.G.Wells</h5>
+            <p>
+                The Invisible Man is an 1897 science fiction novel by British writer H. G. Wells. 
+                Originally serialised in Pearson's Weekly in 1897, it was published as a novel the same year.
+                The Invisible Man to whom the title refers is Griffin, a scientist who has devoted himself to research into optics and who invents a way to change a body's refractive index to that of air so that it neither absorbs nor reflects light.
+            </p>
+            <button onclick="de(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title"id="book">
+            <input type="text" placeholder="Book Author"id="author">
+            <textarea placeholder="Short Description" id="description"></textarea>
+            <button id="adds">Add</button>
+            <button id="cancel">Cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add">+</button>
+    
+
+    <script src="sbooks.js"> </script>
+</body>
+</html>
